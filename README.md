@@ -27,5 +27,6 @@ Upperlimit of the intensityは、カラースケールの最大値がこの値�
 ````
 python HRC_Idp_plot.py Idp_Run14190.csv 1000
 ````
-と入力します。
+と入力して実行すると、下記のような画像が得られるはずです。
 
+![output](https://raw.githubusercontent.com/taro-nakajima/HRC_Idp_plot/master/Idp_Run14190.png)
