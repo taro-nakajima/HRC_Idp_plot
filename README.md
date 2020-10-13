@@ -1,6 +1,6 @@
 # HRC_Idp_plot.pyの使い方
 
-HRCの白色ラウエ測定のデータを800x500のpngファイルにして保存するためのスクリプトです。
+J-PARC MLFのHRC(BL12)の白色ラウエ測定のデータを800x500のpngファイルにして保存するためのスクリプトです。
 
 生成されたpngファイルは
 [Neutron Laue Diffraction Pattern Simulator for HRC(BL12)](https://nakajima.issp.u-tokyo.ac.jp/tools/hrc_laue_sim/)で使用することができます。
@@ -10,6 +10,8 @@ Python3のコードです。
 
 * matplotlib
 * numpy
+
+使い方：
 ````
 python HRC_Idp_plot.py [intensity map (csv)] [Upperlimit of the intenity]
 ````
@@ -20,3 +22,10 @@ Upperlimit of the intensityは、カラースケールの最大値がこの値�
 画像を作ってみたものの全体的に暗くてピークが見えにくいという場合は、この値を小さくすると良いと思います。
 
 テスト用のデータとして付属している「Idp_Run14190.csv」の場合は1000くらいを指定すると良いと思います。
+
+例えば、テスト用csvファイルをpngに変換する場合
+````
+python HRC_Idp_plot.py Idp_Run14190.csv 1000
+````
+と入力します。
+
